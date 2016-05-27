@@ -16,6 +16,11 @@ describe('Score Test', function () {
         expect(expectGrade).toBe('A');
     });
 
+    it('Should return A when input 80', function () {
+        var expectGrade = score.transferScoreToGrade(80, gradeObj);
+        expect(expectGrade).toBe('B');
+    });
+
     it('Should return A when input 55', function () {
         var expectGrade = score.transferScoreToGrade(55, gradeObj);
         expect(expectGrade).toBe('D');
